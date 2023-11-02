@@ -101,7 +101,7 @@ function zip( files, zipFilename=Math.random().toString(36).slice(2)+".zip" ){
       ui8s.push(outputData);
     }();
     
-    /* file footer */
+    /* file entry footer */
     !function(){
       var footer = getDataHelper(16);
       footer.view.setUint32(0, 0x504b0708);
