@@ -70,6 +70,7 @@ function zip( files, zipFilename=Math.random().toString(36).slice(2)+".zip" ){
       crc : new Crc32()
     };
 
+    /* file entry header */
     !function(){
       var header = getDataHelper(26);
       var data = getDataHelper(30 + nameBuf.length);
